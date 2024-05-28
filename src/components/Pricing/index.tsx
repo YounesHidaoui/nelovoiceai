@@ -66,28 +66,34 @@ const Pricing = () => {
           >
             <OfferList text="Local phone number setup" status="active" />
             <OfferList text="Basic call routing" status="active" />
-            <OfferList text="Message taking" status="active" />
+            <OfferList text="Three Functions Setup" status="active" />
             <OfferList text="Email Support" status="active" />
-            <OfferList text="Appointment scheduling" status="inactive" />
-            <OfferList text="Up to 1,000 minutes per month" status="inactive" />
+            <OfferList text="CRM Integration" status="active" />
+            <OfferList text="Up to 100 minutes per month" status="active" />
+            <OfferList text="Invite Team members" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Professional Plan"
-            price={isMonthly ? "99" : "789"}
+            price={isMonthly ? "199" : "1089"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Ideal for growing businesses needing advanced features."
           >
-            <OfferList text="Everything in Basic Plan" status="active" />
-            <OfferList text="Integration with Google Voice" status="active" />
+        <OfferList text="Local phone number setup" status="active" />
+            <OfferList text="Premium call routing" status="active" />
+            <OfferList text="Unlimited Functions Setup" status="active" />
+            <OfferList text="Email Support" status="active" />
+            <OfferList text="CRM Integration" status="active" />
             <OfferList text="Advanced call routing by name" status="active" />
-            <OfferList text="Priority email and phone support" status="active" />
-            <OfferList text="Up to 10,000 minutes per month" status="active" />
-            <OfferList text="Automated lead qualification" status="active" />
-            <OfferList text="SMS notifications" status="active" />
+           
+            {/* <OfferList text="Up to 10,000 minutes per month" status="active" /> */}
+            {/* <OfferList text="Automated lead qualification" status="active" /> */}
+            {/* <OfferList text="SMS notifications" status="active" /> */}
+            <OfferList text="Up to 1000 minutes per month" status="active" />
+            <OfferList text="Invite Team members" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Enterprise Plan"
-            price={isMonthly ? "120" : "1000"}
+            price={isMonthly ? "1400" : "10000"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Designed for large businesses requiring extensive AI capabilities."
           >
@@ -95,7 +101,7 @@ const Pricing = () => {
             <OfferList text="Multilingual support (100+ languages)" status="active" />
             <OfferList text="On-premises deployment options" status="active" />
             <OfferList text="Private internet backbone for reduced latency" status="active" />
-            <OfferList text="High scalability (1M+ concurrent calls)" status="active" />
+            <OfferList text="Up to 5000 minutes per month" status="active" />
             <OfferList text="Custom integrations and API access" status="active" />
             <OfferList text="Dedicated account manager" status="active" />
             <OfferList text="24/7 premium support" status="active" />

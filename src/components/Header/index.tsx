@@ -64,16 +64,16 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/nelo-1.png"
+                  src="/images/logo/logo1.png"
                   alt="logo"
                   width={110}
                   height={30}
                   className="dark:hidden bg-transparent"
                 />
                 <Image
-                  src="/images/logo/nelo-1.png  "
+                  src="/images/logo/logo1.png"
                   alt="logo"
-                  width={90}
+                  width={190}
                   height={40}
                   className="hidden w-full dark:block bg-transparent rounded-lg"
                 />

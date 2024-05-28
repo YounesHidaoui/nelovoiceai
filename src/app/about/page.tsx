@@ -18,7 +18,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Our team is here to build top-notch voice AI for businesses. We focus on making communication easier and more efficient. At Nelovoice, we’re committed to creating the easiest AI voice builder, with small businesses in mind. Our goal is to help companies succeed with our technology. We believe that every business deserves great AI assistance that works 24/7. "
       />
       {/* <AboutSectionOne />
       <AboutSectionTwo /> */}
