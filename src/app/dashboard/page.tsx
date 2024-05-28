@@ -1,12 +1,17 @@
-import { auth, currentUser } from '@clerk/nextjs';
+// import { auth, currentUser } from '@clerk/nextjs';
+
+import { getAuth } from "@clerk/nextjs/server";
+
 
 import { Assistant } from "@/components/Assistant/assistant";
-export default  async function DashboardPage() {
-  const { userId } = auth();
-  const user = await currentUser();
-  if (!userId || !user) {
-    return <div>You are not logged in</div>;
-  }
+export default  function DashboardPage() {
+  // const { userId } = auth();
+
+
+  // const user = await currentUser();
+  // if (!userId || !user) {
+  //   return <div>You are not logged in</div>;
+  // }
 
   return (
     <div className='flex flex-col justify-center items-center '>

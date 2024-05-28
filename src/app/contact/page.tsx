@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="We'd love to hear from you! Whether you're interested in learning more about the NELOVOICE, exploring custom features for your business, or discussing investment opportunities, our team is here to connect with you."
       />
 
       <Contact />
