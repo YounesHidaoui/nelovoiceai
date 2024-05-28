@@ -1,16 +1,16 @@
-import { shows } from "@/data/shows";
+import { events } from "@/data/shows";
 import { vapi } from "../../lib/vapi.sdk";
 import { MessageTypeEnum } from "../../lib/types/conversation.type";
 
 interface TicketProps {
   type: "confirm" | "ticket";
-  show: (typeof shows)[0];
+  show: (typeof events)[0];
   params: any;
 }
 
 function Ticket({
   type = "confirm",
-  show = shows[0],
+  show = events[0],
   params = {},
 }: TicketProps) {
   const confirmDetails = () => {

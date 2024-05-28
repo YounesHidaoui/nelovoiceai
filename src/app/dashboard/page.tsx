@@ -1,13 +1,15 @@
-import { useClerk } from '@clerk/nextjs';
-import { Assistant } from "@/components/Assistant/assistant";
-export default function DashboardPage() {
-  // const { user, session } = useClerk();
+import { auth, currentUser } from '@clerk/nextjs';
 
-  // if (!session || !user) {
-  //   return <div>You are not logged in</div>;
-  // }
+import { Assistant } from "@/components/Assistant/assistant";
+export default  async function DashboardPage() {
+  const { userId } = auth();
+  const user = await currentUser();
+  if (!userId || !user) {
+    return <div>You are not logged in</div>;
+  }
+
   return (
-    <div className='flex justify-center min-h-screen items-center mb-20 '>
+    <div className='flex flex-col justify-center items-center '>
       <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
@@ -249,21 +251,22 @@ export default function DashboardPage() {
             </defs>
           </svg>
         </div>
-     <div className="flex flex-col items-center justify-center">
-      <div>
-        <h3 className="py-2 mx-auto bg-gradient-to-b from-black to-[rgba(43,55,132,0.5)] bg-clip-text text-transparent relative h-fit font-semibold tracking-wide text-4xl sm:text-[56px] sm:leading-[60px] mb-2 sm:mb-4 lg:text-[64px] lg:min-w-[790px] lg:leading-[80px] text-center mt-10 sm:mt-0">AI Voice Agent for Shows </h3>
+     <div className="flex  items-center justify-center h-screen">
+      <div className="">
+        <h3 className="py-2 mx-auto bg-gradient-to-b from-black to-[rgba(43,55,132,0.5)] bg-clip-text text-transparent relative h-fit font-semibold tracking-wide text-2xl sm:text-[56px] sm:leading-[60px] mb-2 sm:mb-4 lg:text-[44px] lg:min-w-[790px] lg:leading-[80px] text-center mt-10 sm:mt-0">AI Voice Agent for Events in Marrakech </h3>
 
         
         <p className=" mb-10 sm:mb-16 max-w-xl mx-auto text-base  leading-6 sm:leading-8 justify-center items-center text-center text-gray-600">
         <span className=" opacity-90">
-        MovieMate is  AI voice assistant designed to enhance your movie-going experience .
+        This demo will help you explore events in the city of Marrakech using natural language.
         </span>
         </p>
       </div>
-        <div className="mt-10">
+       
+     </div>
+     <div className=" -mt-40">
         <Assistant/>
         </div>
-     </div>
     </div>
   );
 } 

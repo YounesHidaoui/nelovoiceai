@@ -8,15 +8,16 @@ function Assistant() {
   const { toggleCall, callStatus, audioLevel } = useVapi();
   return (
     <>
-      <div className="chat-history">
-        <Display />
-      </div>
-      <div className="user-input">
+     
+      <div className="user-input flex flex-col items-center justify-center ">
         <AssistantButton
           audioLevel={audioLevel}
           callStatus={callStatus}
           toggleCall={toggleCall}
         ></AssistantButton>
+         <div className="chat-history  mt-56">
+        <Display />
+      </div>
       </div>
     </>
   );
