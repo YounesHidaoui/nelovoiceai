@@ -17,13 +17,13 @@ const Team = () => {
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/about/younes.jpg"
+                src="/images/about/othmane.png"
                 alt="team image"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
-                src="/images/about/younes.jpg"
+                src="/images/about/othmane.png"
                 alt="team image"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
@@ -51,13 +51,13 @@ As our Chief Executive Officer, Othmane Elourzazi leads with a clear vision and 
               data-wow-delay=".15s"
             >
               <Image
-                src="/images/about/younes.jpg"
+                src="/images/about/younes.png"
                 alt="team image"
                 fill
                 className="drop-shadow-three dark:hidden dark:drop-shadow-none"
               />
               <Image
-                src="/images/about/younes.jpg"
+                src="/images/about/younes.png"
                 alt="team image"
                 fill
                 className="hidden drop-shadow-three dark:block dark:drop-shadow-none"

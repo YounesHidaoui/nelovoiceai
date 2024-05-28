@@ -4,7 +4,8 @@ const SharePost = () => {
       <a
         href="#0"
         aria-label="social-share"
-        className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-sm bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary sm:ml-3"
+        className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-sm
+         bg-gray-light text-body-color duration-300 hover:bg-primary hover:text-white dark:bg-gray-dark dark:hover:bg-primary sm:ml-3"
       >
         <svg
           width="16"

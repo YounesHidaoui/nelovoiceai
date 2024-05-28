@@ -1,6 +1,36 @@
 import Link from "next/link";
 
 const Hero = () => {
+  const styles = {
+    container: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'start',
+        // height: '100vh',
+        // backgroundColor: 'rgba(0, 0, 50, 0.8)', // Example background color
+    },
+    circle: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '130px',
+        height: '130px',
+        borderRadius: '50%',
+        backgroundColor: 'rgba(0, 150, 255, 0.1)', // Example circle color
+        marginBottom: '20px',
+    },
+    button: {
+        padding: '10px 20px',
+        fontSize: '16px',
+        color: '#fff',
+        backgroundColor: 'rgba(0, 255, 150, 0.3)', // Example button color
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+    },
+};
+
   return (
     <>
       <section
@@ -12,13 +42,24 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  NeloVoice Voice Ai For All Businss
+                <h1 className="mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Voice AI for Business
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Ai Phone agents for companies build and deploy A Iphone agents in minutes without code.
+
+                NeloVoice lets business owner build and deploy voice agents in minutes without code.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <Link href="/signin" >
+                <div style={styles.container}>
+            <div style={styles.circle} className="">
+                <svg width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.9998 25.3333V28M15.9998 25.3333C11.0955 25.3333 8.19552 22.3268 6.68555 20M15.9998 25.3333C20.9041 25.3333 23.804 22.3268 25.314 20M21.3331 9.33333V14.6667C21.3331 17.6122 18.9453 20 15.9998 20C13.0543 20 10.6664 17.6122 10.6664 14.6667V9.33333C10.6664 6.38781 13.0543 4 15.9998 4C18.9453 4 21.3331 6.38781 21.3331 9.33333Z" stroke="#0000FF" strokeWidth="2" strokeLinecap="square"></path>
+                </svg>
+            </div>
+            </div>
+            </Link>
+       
+                <div className="flex flex-col mt-10 items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="/dashboard" 
                     className="rounded-md bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
