@@ -51,7 +51,7 @@ build and deploy A Iphone agents in minutes without code.
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="#pricing"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Pricing
@@ -120,7 +120,7 @@ build and deploy A Iphone agents in minutes without code.
                   </li>
                   
                   <div className="flex items-center">
-                  <a
+                  {/* <a
                     href="/"
                     aria-label="social-link"
                     target="_blank"
@@ -161,9 +161,9 @@ build and deploy A Iphone agents in minutes without code.
                         fill="currentColor"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                   <a
-                    href="/"
+                    href="https://www.youtube.com/channel/UCCWl3zfou9AKGQqUKwc-1dA"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -179,7 +179,7 @@ build and deploy A Iphone agents in minutes without code.
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/nelovoice"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"

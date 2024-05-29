@@ -168,7 +168,12 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 {userId ? (
-                  <UserButton />
+                 
+                  <div>
+                     <UserButton />
+                
+                </div>
+                  
                 ) : (
                   <>
                     <Link
@@ -183,12 +188,13 @@ const Header = () => {
                     >
                       Sign Up
                     </Link>
+                    <div>
+                 
+                </div>
                   </>
                 )}
 
-                <div>
-                  <ThemeToggler />
-                </div>
+                
               </div>
             </div>
           </div>

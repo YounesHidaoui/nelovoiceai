@@ -31,7 +31,7 @@ const blogData: Blog[] = [
     },
     tags: ["ai voice"],
     publishDate: "2024",
-    link: "/blog-details2"
+    link: "/blog-details1"
   },
   {
     id: 3,

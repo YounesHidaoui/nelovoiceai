@@ -14,8 +14,8 @@ const Blog = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Blog "
+        description="Explore our blog to find insightful articles about AI voice technology and its diverse use cases. Discover how AI voices are transforming customer service, streamlining operations, and enhancing user experiences across various industries."
       />
 
       <section className="pb-[120px] pt-[120px]">
