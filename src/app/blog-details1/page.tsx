@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 
 
-const BlogDetailsPage = () => {
+const BlogDetailsPage = ()=> {
   return (
     <>
       <section className="pb-[120px] pt-[150px]">
@@ -73,7 +73,7 @@ const BlogDetailsPage = () => {
                     Benefits for Customer Service
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    1) Better Customer Experience
+                    1 Better Customer Experience
                     <br />
                     AI phone assistants enhance customer service by:
                     <br />
@@ -85,7 +85,7 @@ const BlogDetailsPage = () => {
                     <br />
                     This ensures that customers get the help they need quickly, improving their overall experience.
                     <br />
-                    2) Cost Savings and Efficiency
+                    2 Cost Savings and Efficiency
                     <br />
                     For businesses, AI systems offer a cost-effective alternative to traditional customer service teams. They:
                     <br />
@@ -99,7 +99,7 @@ const BlogDetailsPage = () => {
                     Key Features of AI Phone Assistants
                   </h3>
                   <p className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    1) Advanced Speech Recognition
+                    1 Advanced Speech Recognition
                     <br />
                     These AI systems can:
                     <br />
@@ -109,7 +109,7 @@ const BlogDetailsPage = () => {
                     <br />
                     This makes each customer feel valued and understood, enhancing their experience.
                     <br />
-                    2) Challenges and Future Prospects
+                    2 Challenges and Future Prospects
                     <br />
                     While AI phone assistants are a big step forward, there are still challenges to address:
                     <br />
