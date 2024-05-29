@@ -1,26 +1,25 @@
-'use client'
+"use client"
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
-import NewsLatterBox from "./NewsLatterBox";
-import axios from 'axios';
+export default function Contact() {
+  const form = useRef();
 
-const Contact = () => {
-  const handleSubmit = async (event:any) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      message: formData.get('message'),
-    };
-    try {
-      console.log(data)
-      await axios.post('/api/contact', data);
-      alert('Message sent successfully!');
-    } catch (error) {
-      console.error('Failed to send message:', error);
-      alert('Failed to send message.');
-    }
+  const sendEmail = (e:any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_tjv39fx', 'template_pgxuml9', form.current, 'VfC0eMfavbvINFCRb')
+      .then(
+        () => {
+          console.log('SUCCESS!',form.current);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        }
+      );
   };
 
   return (
@@ -38,7 +37,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form onSubmit={handleSubmit}>
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -49,7 +48,7 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
-                        name="name"
+                        name="user_name"
                         type="text"
                         placeholder="Enter your name"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
@@ -66,7 +65,7 @@ const Contact = () => {
                         Your Email
                       </label>
                       <input
-                        name="email"
+                        name="user_email"
                         type="email"
                         placeholder="Enter your email"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
@@ -101,12 +100,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
+            {/* You can add your NewsLatterBox component here */}
           </div>
         </div>
       </div>
+
     </section>
   );
 };
-
-export default Contact;
