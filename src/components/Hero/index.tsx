@@ -50,7 +50,7 @@ let styles = {
 
                 NeloVoice lets business owner build and deploy voice agents in minutes without code.
                 </p>
-                <Link href="/signin" >
+                <Link href="/sign-in" >
                 <div style={styles.container}>
             <div style={styles.circle} className="">
                 <svg width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
