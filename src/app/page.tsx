@@ -14,7 +14,7 @@ import Index from "@/components/faq";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "nelovoice | Voice Technology for Every Business",
+  title: "nelovoice | Ai Voice Technology for Every Business",
   description:"NELOVOICE AI Phone Agent: Enhance Your Customer Service Experience | Advanced AI Solutions for Businesses"  // other metadata
 };
 
