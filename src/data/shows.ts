@@ -1,6 +1,6 @@
 export const events = [
     {
-      title: "The GITEX AFIRCA",
+      title: "The GITEX AFRICA",
       description:
         "Visit the LARGEST Tech & Startup show in Africa.",
       img: "https://th.bing.com/th/id/OIP.7z3FQ4iXlgzMY0WWuvDhXgHaGt?w=720&h=653&rs=1&pid=ImgDetMain",
