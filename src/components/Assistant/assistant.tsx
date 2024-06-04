@@ -15,7 +15,7 @@ function Assistant() {
           callStatus={callStatus}
           toggleCall={toggleCall}
         ></AssistantButton>
-         <div className="chat-history  mt-56">
+         <div className="chat-history  mt-20 mb-20">
         <Display />
       </div>
       </div>

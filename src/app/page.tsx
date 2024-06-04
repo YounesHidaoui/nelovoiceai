@@ -14,9 +14,8 @@ import Index from "@/components/faq";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "nelovoice | Ai Voice Technology for Every Business",
+  description:"NELOVOICE AI Phone Agent: Enhance Your Customer Service Experience | Advanced AI Solutions for Businesses"  // other metadata
 };
 
 export default function Home() {

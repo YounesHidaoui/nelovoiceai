@@ -97,9 +97,9 @@ export const assistant: CreateAssistantDTO | any = {
   },
   voice: {
     provider: "11labs",
-    voiceId: "paula",
+    voiceId: "pFZP5JQG7iQjIQuC4Bku",
   },
   firstMessage:
-    "Hi. I'm Laila, Welcome to Marrakech Events! How are u feeling today?",
+    "Hi. I'm Laila, Welcome to Marrakech Events! would you like to book tickets for an event?",
   serverUrl: process.env.NEXT_PUBLIC_SERVER_URL,
 };

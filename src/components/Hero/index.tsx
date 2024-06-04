@@ -1,14 +1,14 @@
 import Link from "next/link";
+// import { CSSProperties } from 'styled-components';
 
 const Hero = () => {
-  const styles = {
+
+let styles = {
     container: {
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'column' as 'column',
         alignItems: 'center',
         justifyContent: 'start',
-        // height: '100vh',
-        // backgroundColor: 'rgba(0, 0, 50, 0.8)', // Example background color
     },
     circle: {
         display: 'flex',
@@ -17,19 +17,20 @@ const Hero = () => {
         width: '130px',
         height: '130px',
         borderRadius: '50%',
-        backgroundColor: 'rgba(0, 150, 255, 0.1)', // Example circle color
+        backgroundColor: 'rgba(0, 150, 255, 0.1)',
         marginBottom: '20px',
     },
     button: {
         padding: '10px 20px',
         fontSize: '16px',
         color: '#fff',
-        backgroundColor: 'rgba(0, 255, 150, 0.3)', // Example button color
+        backgroundColor: 'rgba(0, 255, 150, 0.3)',
         border: 'none',
         borderRadius: '5px',
         cursor: 'pointer',
     },
 };
+
 
   return (
     <>
@@ -49,7 +50,7 @@ const Hero = () => {
 
                 NeloVoice lets business owner build and deploy voice agents in minutes without code.
                 </p>
-                <Link href="/signin" >
+                <Link href="/sign-in" >
                 <div style={styles.container}>
             <div style={styles.circle} className="">
                 <svg width="42" height="42" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -67,7 +68,7 @@ const Hero = () => {
                     🔥 Try Demo
                   </Link>
                   <Link
-                    href="  "
+                    href="#pricing"
                     className="inline-block rounded-md bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5 "
                   >
                     See Pricing

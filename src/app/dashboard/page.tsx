@@ -1,12 +1,17 @@
-import { auth, currentUser } from '@clerk/nextjs';
+// import { auth, currentUser } from '@clerk/nextjs';
+
+import { getAuth } from "@clerk/nextjs/server";
+
 
 import { Assistant } from "@/components/Assistant/assistant";
-export default  async function DashboardPage() {
-  const { userId } = auth();
-  const user = await currentUser();
-  if (!userId || !user) {
-    return <div>You are not logged in</div>;
-  }
+export default  function DashboardPage() {
+  // const { userId } = auth();
+
+
+  // const user = await currentUser();
+  // if (!userId || !user) {
+  //   return <div>You are not logged in</div>;
+  // }
 
   return (
     <div className='flex flex-col justify-center items-center '>
@@ -258,7 +263,7 @@ export default  async function DashboardPage() {
         
         <p className=" mb-10 sm:mb-16 max-w-xl mx-auto text-base  leading-6 sm:leading-8 justify-center items-center text-center text-gray-600">
         <span className=" opacity-90">
-        This demo will help you explore events in the city of Marrakech using natural language.
+        This demo will help you explore events and book tickets in the city of Marrakech using natural language.
         </span>
         </p>
       </div>
